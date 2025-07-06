@@ -34,19 +34,6 @@ We use high-resolution GridMET weather data and a Transformer-based model to gen
 
 ---
 
-## Architecture
-
-Our MVP is built on a **serverless Azure stack** using:
-- **Azure Functions** for API routing
-- **Azure ML Online Endpoints** to serve the trained Transformer model
-- **Cosmos DB** and **Blob Storage** for ZIP cache and GridMET ingestion
-- **Azure Static Web Apps + MapLibre** to host the interface
-
-This architecture is **cost-free during MVP** (under $100 Azure credit) and scales pay-as-you-grow.  
-See the full deployment plan in the **appendix PDF**.
-
----
-
 ## Getting Started
 
 1. **Clone the repo**
@@ -91,8 +78,6 @@ capstone/
 ├── notebooks/           # EDA, model training, evaluation
 ├── risk_score_models/   # Transformer model and scripts
 ├── streamlit/           # Streamlit UI logic
-├── app.py               # App runner
-├── requirements.txt     # Dependencies
 └── README.md            # You're here!
 ```
 
