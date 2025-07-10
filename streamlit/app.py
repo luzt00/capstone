@@ -68,7 +68,7 @@ def get_price_estimates(zip_code="85004", limit=200):
 # --- Load Data ---
 @st.cache_data
 def load_scores():
-    return pd.read_csv("../phoenix_scores.csv")
+    return pd.read_csv("phoenix_scores.csv")
 
 @st.cache_data
 def load_housing(zips):
