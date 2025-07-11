@@ -19,6 +19,7 @@ We use high-resolution GridMET weather data and a Transformer-based model to gen
 - Output: `std_score` per coordinate = temporal volatility proxy
 
 ### `streamlit/`
+- Create an API key in Realtor for RAPID API.
 - Streamlit app to load Realtor listings by ZIP
 - Matches each property to the nearest `std_score`
 - Computes `capi_price` using a tunable risk penalty
